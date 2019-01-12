@@ -47,9 +47,6 @@ if (process.env.MONGODB_URI) {
 }
 var db = mongoose.connection;
 
-/*mongoose.connect("mongodb://heroku_dnbl2f3n:etrnrrvnoe7m1qmtae0jret6ss@ds111882.mlab.com:11882/heroku_dnbl2f3n");
-var db = mongoose.connection;*/
-
 // Show any mongoose errors
 db.on("error", function (error) {
      console.log("Mongoose Error: ", error);
